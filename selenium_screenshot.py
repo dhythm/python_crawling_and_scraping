@@ -122,7 +122,7 @@ def create_proxyauth_extension(proxy_host, proxy_port,
       mode: "fixed_servers",
       rules: {
         singleProxy: {
-          scheme: "{scheme}",
+          scheme: "${scheme}",
           host: "${host}",
           port: parseInt(${port})
         },
